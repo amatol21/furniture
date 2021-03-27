@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.eot');
+	src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff') format('woff'),
+		url('../fonts/Gilroy-Regular.ttf') format('truetype'),
+		url('../fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/*Variables*/
+$font-dark: #3A3A3A;
+
+
+
+
+
+@mixin reg {
+	 font-family: 'Gilroy', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+ 
+* { 
+    @include reg;
+    color: $font-dark;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button, input {
+    border: none;
+    outline: none;
+}
+
+button, input, a, select, textarea, div {
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.cover {
+    margin: 0 auto;
+}
+
+.line {
+    display: flex;
+}
+
+.indent {
+    padding: 6rem 0;
+}
+
+
+
+h1{
+	background-color: purple; 
+}
+
+
