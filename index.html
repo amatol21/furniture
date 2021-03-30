@@ -7,14 +7,89 @@
 		<meta name="description" content="Our aim is to find for you the best funiture">
 
 		<link rel="stylesheet" href="css/normalize.css">
+		<!--<link rel="stylesheet" href="splide/splide.min.css">-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 		<link rel="stylesheet" href="./css/style.css">
+
+		<!--<script src="splide/splide.min.js"></script>-->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+		<script>
+			document.addEventListener( 'DOMContentLoaded', function () {
+				new Splide( '.splide', {
+					type: 	'loop',
+					fixedWidth : 930,
+					height     : 552,
+					gap        : 30,
+					focus      : true //'right',
+					//trimspace  : false
+				}).mount();
+			} );
+		</script>
 
 		<title>Funiro</title>
 	</head>
 	<body>
-		
+		<main>
+			<div class="lower-bg"></div>
+			<div class="upper-bg"></div>
+			<div class="upper cover line">
+				<nav class="upper-nav line">
+					<a class="upper-nav-logo">Funiro.</a>
+					<a class="upper-nav-item">Products</a>
+					<a class="upper-nav-item">Rooms</a>
+					<a class="upper-nav-item">Inspirations</a>
+					<form action="" class="upper-nav-search line">
+						<img class="loupe" src="img/main/nav/loupe.png" alt="loupe">
+						<input type="text" class="upper-nav-search-input" placeholder="Search for minimalist chair">
+						<button class="upper-nav-search-button"><img class="arrow" src="img/main/nav/search.png" alt="search"></button>
+					</form>
+					<form action="" class="upper-nav-sign">
+						<button class="upper-nav-sign-up">Sign up</button>
+						<button class="upper-nav-sign-in">Sign in</button>
+					</form>
+				</nav>
+				<form action="" class="upper-form">
+					<h1>High-Quality Furniture Just For You</h1>
+					<p>Our furniture is made from selected and best quality materials that are suitable for your dream home</p>
+					<button>Shop Now</button>
+				</form>
+			</div>
+			<div class="splide cover">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide"><img src="img/main/slider/1.jpg" alt="furniture"></li>
+						<li class="splide__slide"><img src="img/main/slider/2.jpg" alt="furniture"></li>
+						<li class="splide__slide"><img src="img/main/slider/3.jpg" alt="furniture"></li>
+						<li class="splide__slide"><img src="img/main/slider/4.jpg" alt="furniture"></li>
+						<li class="splide__slide"><img src="img/main/slider/5.jpg" alt="furniture"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cover line">
+				<div class="benfit">
+					<img src="" alt="">
+					<h3>High Quality</h3>
+					<p>crafted from top materials</p>
+				</div>
+				<div class="benfit">
+					<img src="" alt="">
+					<h3>Warrany Protection</h3>
+					<p>Over 2 years</p>
+				</div>
+				<div class="benfit">
+					<img src="" alt="">
+					<h3>Free Shipping</h3>
+					<p>Over 2 years</p>
+				</div>
+				<div class="benfit">
+					<img src="" alt="">
+					<h3>24 / 7 Support</h3>
+					<p>Dedicated support</p>
+				</div>
+			</div>
+		</main>
 
-		
 	</body>
 </html>
 
