@@ -4,13 +4,16 @@
 		<!-- Обязательные метатеги -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="title" content="Furniture sales website">
 		<meta name="description" content="Our aim is to find for you the best funiture">
+		<meta name="docsearch:language" content="en">
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="splide/splide.min.css">
 		<link rel="stylesheet" href="./css/style.css">
 
 		<script src="splide/splide.min.js"></script>
+		<script type='module' src="js/main.js"></script>
 		
 		<title>Funiro</title>
 	</head>
@@ -21,9 +24,12 @@
 			<div class="upper cover line">
 				<nav class="upper-nav line">
 					<a class="upper-nav-logo">Funiro.</a>
-					<a class="upper-nav-item">Products</a>
-					<a class="upper-nav-item">Rooms</a>
-					<a class="upper-nav-item">Inspirations</a>
+					<ul class="upper-nav-menu line">
+						<li><a class="upper-nav-menu-item" id="products">Products &ensp;&or;</a>	
+						</li>
+						<li><a class="upper-nav-menu-item">Rooms &ensp;&or;</a></li>
+						<li><a class="upper-nav-menu-item">Inspirations</a></li>
+					</ul>					
 					<form action="" class="upper-nav-search line">
 						<img class="loupe" src="img/main/nav/loupe.png" alt="loupe">
 						<input type="text" class="upper-nav-search-input" placeholder="Search for minimalist chair">
@@ -141,7 +147,7 @@
 				<div class="products-content line">
 					<h2>Our Products</h2>
 					<div class="products-content-line line">
-						<div class="products-content-line-item">
+						<figure class="products-content-line-item">
 							<p class="annotation">-50%</p>
 							<img src="img/our products/1.jpg" alt="Syltherine">
 							<h3>Syltherine</h3>
@@ -151,8 +157,8 @@
 								<span>Rp 3.500.000</span>
 							</p>	
 							<a href=""></a>
-						</div>
-						<div class="products-content-line-item">
+						</figure>
+						<figure class="products-content-line-item">
 							<p class="annotation">-50%</p>
 							<img src="img/our products/2.jpg" alt="Leviosa">
 							<h3>Leviosa</h3>
@@ -162,8 +168,8 @@
 								<span>Rp 3.500.000</span>
 							</p>	
 							<a href=""></a>
-						</div>
-						<div class="products-content-line-item">
+						</figure>
+						<figure class="products-content-line-item">
 							<p class="annotation">-50%</p>
 							<img src="img/our products/3.jpg" alt="Lolito">
 							<h3>Lolito</h3>
@@ -173,8 +179,8 @@
 								<span>Rp 14.000.000</span>
 							</p>	
 							<a href=""></a>
-						</div>
-						<div class="products-content-line-item">
+						</figure>
+						<figure class="products-content-line-item">
 							<p class="annotation">-50%</p>
 							<img src="img/our products/4.jpg" alt="Respira">
 							<h3>Respira</h3>
@@ -184,7 +190,7 @@
 								<span></span>
 							</p>	
 							<a href=""></a>
-						</div>
+						</figure>
 					</div>
 					<a href="#" class="show">Show more</a>
 				</div>
@@ -210,32 +216,35 @@
 									<div class="info">
 										<p>1 - Bed Room</p>
 										<h3>Inner Peace</h3>
+										<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
 									</div>
-									<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
 								</li>
 								<li class="splide__slide">
 									<img src="img/inspiration/2.jpg" class="splide__slide__photo" alt="Photo">
 									<div class="info">
 										<p>1 - Bed Room</p>
 										<h3>Inner Peace</h3>
+										<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
 									</div>
-									<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
+									
 								</li>
 								<li class="splide__slide">
 									<img src="img/inspiration/3.jpg" class="splide__slide__photo" alt="Photo">
 									<div class="info">
 										<p>1 - Bed Room</p>
 										<h3>Inner Peace</h3>
+										<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
 									</div>
-									<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
+									
 								</li>
 								<li class="splide__slide">
 									<img src="img/inspiration/4.jpg" class="splide__slide__photo" alt="Photo">
 									<div class="info">
 										<p>1 - Bed Room</p>
 										<h3>Inner Peace</h3>
+										<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
 									</div>
-									<a href="#" class="link" title="new page opening" title="new page opening"><img src="img/inspiration/search.png" alt="arrow" srcset="img/inspiration/search.svg"></a>
+									
 								</li>
 							</ul>
 						</div>
@@ -243,6 +252,120 @@
 				</div>
 			</div>
 		</section>
+
+
+		<!-- Tips and tricks -->
+
+		<section class="tips">
+			<div class="cover">
+				<div class="tips-content">
+					<h2>Tips & Tricks</h2>
+					<div class="splide">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<img src="img/tips and tricks/1.jpg" alt="">
+									<h3>How to create a living room to love</h3>
+									<time datetime="2020-01-20">20 jan 2020</time>
+								</li>
+								<li class="splide__slide">
+									<img src="img/tips and tricks/2.jpg" alt="">
+									<h3>Solution for clean look working space</h3>
+									<time datetime="2020-01-10">10 jan 2020</time>
+								</li>
+								<li class="splide__slide">
+									<img src="img/tips and tricks/3.jpg" alt="">
+									<h3>Make your cooking activity more fun with good setup</h3>
+									<time datetime="2020-01-08">8 jan 2020</time>
+								</li>
+								<li class="splide__slide">
+									<img src="img/tips and tricks/4.jpg" alt="">
+									<h3>How to design the best nursery</h3>
+									<time datetime="2020-01-03">3 jan 2020</time>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- #FuniroFurniture -->
+
+		<section class="funiro">
+			<div class="funiro-content">
+				<p>Share your setup with</p>
+				<h2>#FuniroFurniture</h2>
+				<div class="funiro-content-photos line">
+					<figure class="funiro-content-photos-left line">
+						<img class="photo1" src="img/funiro furniture/1.jpg" alt="1th photo">
+						<img class="photo2" src="img/funiro furniture/2.jpg" alt="2nd photo">
+						<img class="photo3" src="img/funiro furniture/3.jpg" alt="3rd photo">
+						<img class="photo4" src="img/funiro furniture/4.jpg" alt="4th photo">
+					</figure>
+					<img class="photo5" src="img/funiro furniture/5.jpg" alt="5th photo">
+					<figure class="funiro-content-photos-right line">
+						<img class="photo6" src="img/funiro furniture/6.jpg" alt="6th photo">
+						<img class="photo7" src="img/funiro furniture/7.jpg" alt="7th photo">
+						<img class="photo8" src="img/funiro furniture/8.jpg" alt="8th photo">
+						<img class="photo9" src="img/funiro furniture/9.jpg" alt="9th photo">
+					</figure>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Footer --> 
+
+		<footer class="footer">
+			<div class="cover">
+				<div class="footer-content line">
+					<div class="footer-content-item footer1">
+						<h3>Funiro</h3>
+						<p>Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</p>
+						<p>
+							<img src="" alt="">
+							Sawojajar Malang, Indonesia
+						</p>
+						<p>+6289 456 3455</p>
+						<p><a href="">www.funiro.com</a></p>
+					</div>
+					<div class="footer-content-item">
+						<h3>Menu</h3>
+						<a href="#">Products</a>
+						<a href="#">Rooms</a>
+						<a href="#">Inspirations</a>
+						<a href="#">About Us</a>
+						<a href="#">Terms & Policy</a>
+					</div>
+					<div class="footer-content-item">
+						<h3>Account</h3>
+						<a href="">My Account</a>
+						<a href="">Checkout</a>
+						<a href="">My Cart</a>
+						<a href="">My Catalog</a>
+					</div>
+					<div class="footer-content-item">
+						<h3>Stay Connected</h3>
+						<p>Facebook</p>
+						<p>Instagram</p>
+						<p>Twitter</p>
+					</div>
+					<div class="footer-content-item footer5">
+						<h3>Stay Updated</h3>
+						<form action="" class="line">
+							<input type="text" placeholder="Enter your email">
+							<button><img src="img/footer/send.png" alt="send" srcset="img/footer/send.svg"></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
 
 
 		<script>
@@ -267,7 +390,17 @@
 							rewind   : true 
 						} ).mount();
 					}
+					else if(i == 2){
+						new Splide( elms[ i ], {
+							type       : 'loop',
+							fixedWidth : 347,
+							trimSpace: false,
+							rewind   : true 
+						} ).mount();
+					}
 				}
+
+				
 		</script>
 	</body>
 </html>

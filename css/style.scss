@@ -138,10 +138,17 @@ main{
 				line-height: 3rem;
 			}
 
-			&-item{
-				font-size: 1.6rem;
-				margin-right: 4rem;
-				line-height: 3rem;
+			&-menu{
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+
+				&-item{
+					font-size: 1.6rem;
+					margin-right: 4rem;
+					line-height: 3rem;
+
+				}
 			}
 
 			&-search{
@@ -249,14 +256,14 @@ main{
 
 		&__arrow{
 			background-color: $light-button-color;
-			width: 5rem;
-			height: 5rem;
+			width: 4.2rem;
+			height: 4.2rem;
 			z-index: 1;
 
 			svg{
 				fill: $dark-button-color;
-				width: 2.5rem;
-				height: 2.5rem;
+				width: 2rem;
+				height: 2rem;
 			}
 
 			&:hover{
@@ -438,6 +445,7 @@ main{
 			margin: 0 0 3.5rem 0;
 
 			&-item{
+				margin: 0;
 				position: relative;
 				background-color: $bg-middle;
 
@@ -592,8 +600,8 @@ main{
 					background-color: $dark-button-color;
 					border-radius: 3px;
 					position: absolute;
-					bottom: 2rem;
-					left: 20.5rem;
+					bottom: 0;
+					right: -4.5rem; 
 
 					img{
 						width: 2rem;
@@ -602,15 +610,26 @@ main{
 				}
 			}
 
+			&__arrow{
+
+				svg{
+					fill: $dark-button-color;
+					width: 2rem;
+					height: 2rem;
+				}
+			}
+
 			&__arrow--prev{
 				display: none;
 			}
 
 			&__arrow--next{
-				background-color: $light-button-color;
-				width: 5rem;
-				height: 5rem;
+				background-color: $bg-light;
+				box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+				width: 4.2rem;
+				height: 4.2rem;
 				z-index: 1;
+				opacity: 1;
 				top: 58rem;
 				left: 67rem;
 
@@ -677,6 +696,324 @@ main{
 		}
 	}
 }
+
+
+/* Tips and tricks */
+
+.tips{
+	padding: 4rem 0 6rem 0;
+
+	&-content{
+
+		h2{
+			margin: 0 0 3rem 0;
+			font-size: 4rem;
+			@include bold;
+			text-align: center;
+		}
+
+		.splide{
+			//padding: 2rem 0;
+
+			&__track{
+				padding: 0 2rem 3rem 2rem;
+			}
+
+			&__slide{
+				margin: 0 1.5rem;
+
+				img{
+					display: block;
+					width: 34.7rem;
+					margin: 0 0 1.6rem 0;
+				}
+
+				h3{
+					margin: 0 1.6rem 1rem 1.6rem;
+					font-size: 2.2rem;
+					font-weight: 600;
+				}
+
+				time{
+					display: block;
+					margin: 0 1.6rem 1.6rem 1.6rem;
+					font-size: 1.4rem;
+				}
+
+				&:hover{
+					box-shadow: 0 1.5rem 1.5rem rgba(0,0,0,0.1);
+				}
+			}
+
+			&__arrow{
+				background-color: $bg-light;
+				box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+				width: 4.2rem;
+				height: 4.2rem;
+				z-index: 1;
+				opacity: 1;
+
+				svg{
+					fill: $dark-button-color;
+					width: 2rem;
+					height: 2rem;
+				}
+
+				&:hover{
+					transition: 0.3s;
+					background-color: $dark-button-color;
+
+					svg{
+						fill: $bg-light;
+					}
+				}
+
+				&--prev{
+				}
+
+				&--next{
+					right: 0rem;
+				}
+			}
+
+			&__pagination{
+				bottom: -3rem;
+				width: 20rem;
+				height: 5rem;
+
+				&__page{
+					width: 1rem;
+					height: 1rem;
+					margin: 1rem;
+				}
+			}
+
+			.splide__pagination__page.is-active{
+				//position: relative;
+				width: 2.8rem;
+				height: 2.8rem;
+				background-color: transparent;
+				border: 2px solid $dark-button-color;
+
+				&:before{
+					width: 1rem;
+					height: 1rem;
+					margin: 0 auto;
+					content: '';
+					display: block;
+					background-color: $dark-button-color;
+					border-radius: 50px;
+				}
+			}
+
+		}
+	}
+}
+
+
+/* #FuniroFurniture */
+
+.funiro{
+	padding: 0 0 6rem 0;
+
+	&-content{
+		position: relative;
+		height: 78rem;
+		overflow: hidden;
+
+		p{
+			margin: 0 0 1rem 0;
+			font-size: 2rem;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		h2{
+			margin: 0;
+			@include bold;
+			font-size: 3.6rem;
+			text-align: center;
+		}
+
+		&-photos{
+			position: absolute;
+			left: 57%;
+			transform: translateX(-50%);
+			top: 4rem;
+			justify-content: center;
+			align-items: center;
+			width: 190rem;			
+
+			&-left{
+				justify-content: flex-end;
+				flex-wrap: wrap;
+				position: relative;
+				width: 77rem;
+				margin: 0;
+
+				img{
+					display: block;
+					margin: 1rem;
+				}
+
+				.photo1{
+					height: 38rem;
+					width: auto;
+				}
+
+				.photo2{
+					height: 31rem;
+					width: auto;
+					align-self: flex-end;
+				}
+
+				.photo3{
+					height: 32rem;
+					width: auto;
+				}
+
+				.photo4{
+					height: 24rem;
+					width: auto;
+					align-self: flex-start;
+				}
+			}
+
+			.photo5{
+				margin: 0 0.8rem;
+			}
+
+			&-right{
+				flex-wrap: wrap;
+				position: relative;
+				width: 78rem;
+				margin: 0;
+
+				img{
+					display: block;
+					margin: 1rem;
+				}
+
+				.photo6{
+					height: 35rem;
+					width: auto;
+					align-self: flex-end;
+				}
+
+				.photo7{
+					height: 43rem;
+					width: auto;
+				}
+
+				.photo8{
+					height: 24rem;
+					width: auto;
+				}
+
+				.photo9{
+					height: 20rem;
+					width: auto;
+					align-self: flex-start;
+				}
+			}
+		}
+	}
+}
+
+
+/* footer */
+
+.footer{
+
+	.cover{
+		border-top: 1px solid rgba(0,0,0,0.2);
+		padding: 7rem 0 4rem 0;
+
+		.footer-content{
+
+			&-item{
+				margin: 0 7rem 0 0;
+
+				h3{
+					margin: 0 0 1.6rem 0;
+					@include bold;
+					font-size: 2.2rem;
+				}
+
+				p{
+					margin: 0 0 1.6rem 0;
+					font-size: 1.6rem;
+				}
+
+				a{
+					display: block;
+					margin: 0 0 1.6rem 0;
+					font-size: 1.6rem;
+				}
+			}
+
+			.footer1{
+				width: 25rem;
+			}
+
+			.footer5{
+				margin: 0;
+				flex-grow: 1;
+
+				.line{
+
+					input{
+						background-color: $bg-middle;
+						flex-grow: 1;
+						padding: 1rem 1.2rem;
+						font-size: 1.6rem;
+						color: $font-middle;
+					}
+
+					button{
+						margin: 0 0 0 0.4rem;
+						padding: 1rem 1.2rem;
+						background-color: $dark-button-color;
+
+						img{
+							width: 1.5rem;
+							height: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.main-dropDown{
+	position: absolute;
+	background-color: $main-lower-bg;
+	padding: 1rem;
+	margin: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 2rem;
+	list-style-type: none !important;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	border-radius: 3px; 
+}
+
+ul ul{
+	list-style-type: none;
+}
+
 
 
 
